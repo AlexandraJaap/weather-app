@@ -28,6 +28,7 @@ ul {
 .card {
   margin-top: 150px;
   left: 200px;
+  box-shadow: 10px 5px 5px grey;
 }
 
 .temp-info {
