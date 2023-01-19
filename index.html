@@ -10,13 +10,14 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/styles.css" />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-    <title>Weather App</title>
+    <title>Weather App HW5</title>
   </head>
+
   <body>
     <div class="container">
-      <div class="card mb-3" style="max-width: 900px;">
+      <div class="card mb-3" style="max-width: 900px">
         <div class="row g-0">
           <div class="col-md-4">
             <img
@@ -42,97 +43,122 @@
                 >
                   Current
                 </button>
-                <br>
-                <br>
-                <br>
+                <br />
+                <br />
+                <br />
                 <!--5 day Weather Forecast-->
-        <div class="forecast-container">
-            <div class="row">
-              <!--Monday-->
-              <div class="col">
-              <div class="weekday">Monday</div>
-              <div class="img-icon">
-                <img src="src/images/icons8-leicht-bewölkt-tag-64.png"></div>
-              <div class="temp">08°
-              <span class="celcius">01°</span></div>
-              </div>
-
-              <!--Tuesday-->
-              <div class="col">
-              <div class="weekday">Tuesday</div>
-              <div class="img-icon">
-                <img src="src/images/icons8-nebel-tag-64.png"></div>
-              <div class="temp">08°
-              <span class="celcius">01°</span></div>
-              </div>
-
-              <!--Wednesday-->
-              <div class="col">
-                  <div class="weekday">Wednesday</div>
-                  <div class="img-icon">
-                    <img src="src/images/icons8-regen-64.png"></div>
-                  <div class="temp">08°
-                  <span class="celcius">01°</span></div>
-                  </div>
-
-              <!--Thursday-->
-              <div class="col">
-                  <div class="weekday">Thursday</div>
-                  <div class="img-icon">
-                    <img src="src/images/icons8-schnee-64.png"></div>
-                  <div class="temp">08°
-                  <span class="celcius">01°</span></div>
-                  </div>
-                   <!--Friday-->
-                <div class="col">
-                    <div class="weekday">Friday</div>
-                    <div class="img-icon">
-                      <img src="src/images/icons8-sonne-64.png"></div>
-                    <div class="temp">08°
-                    <span class="celcius">01°</span></div>
+                <div class="forecast-container">
+                  <div class="row">
+                    <!--Monday-->
+                    <div class="col">
+                      <div class="weekday">Monday</div>
+                      <div class="img-icon">
+                        <img
+                          src="src/images/icons8-leicht-bewölkt-tag-64.png"
+                        />
+                      </div>
+                      <div class="temp">
+                        08°
+                        <span class="celcius">01°</span>
+                      </div>
                     </div>
-                   
+
+                    <!--Tuesday-->
+                    <div class="col">
+                      <div class="weekday">Tuesday</div>
+                      <div class="img-icon">
+                        <img src="src/images/icons8-nebel-tag-64.png" />
+                      </div>
+                      <div class="temp">
+                        08°
+                        <span class="celcius">01°</span>
+                      </div>
+                    </div>
+
+                    <!--Wednesday-->
+                    <div class="col">
+                      <div class="weekday">Wednesday</div>
+                      <div class="img-icon">
+                        <img src="src/images/icons8-regen-64.png" />
+                      </div>
+                      <div class="temp">
+                        08°
+                        <span class="celcius">01°</span>
+                      </div>
+                    </div>
+
+                    <!--Thursday-->
+                    <div class="col">
+                      <div class="weekday">Thursday</div>
+                      <div class="img-icon">
+                        <img src="src/images/icons8-schnee-64.png" />
+                      </div>
+                      <div class="temp">
+                        08°
+                        <span class="celcius">01°</span>
+                      </div>
+                    </div>
+                    <!--Friday-->
+                    <div class="col">
+                      <div class="weekday">Friday</div>
+                      <div class="img-icon">
+                        <img src="src/images/icons8-sonne-64.png" />
+                      </div>
+                      <div class="temp">
+                        08°
+                        <span class="celcius">01°</span>
+                      </div>
+                    </div>
+
                     <!--Location Bottom info-->
-        <div class="info-container">
-            <div class="row">
-              <div class="col-6">
-                  <h1 id="city">Salzburg</h1>
-                  <ul class="left">
-                      <li id="date"></li>
-                      <li id="description"></li>
-                 </ul>
-              </div>
-    
-              <div class="col-6">
-                <img
-                  src="src/images/icons8-teilweise-bewölkt-&-regen-64.png"
-                  alt="Cloudy icon"
-                  class="weather-icon"
-                />
-    
-                <span class="temperature" id="temperature">1</span>
-                <span class="units">°C | <a href="#">°F</a></span>
-            </div>
-            </div>
-            <!--Location Temp Bottom info-->
-        <div class="temp-container">
-            <div class="row">
-              <div class="col-9">
-                  <ul>
-                      <li>Humidity: <span id="humidity"></span>%</li>
-                      <li>Wind: <span id="wind"></span> km/h</li>
-                    </ul>
-              </div>
-            </div>
-        </div>
+                    <div class="info-container">
+                      <div class="row">
+                        <div class="col-6">
+                          <h1 id="city">Salzburg</h1>
+                          <ul class="left">
+                            <li id="date"></li>
+                            <li id="description"></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-6">
+                          <img
+                            src="src/images/icons8-teilweise-bewölkt-&-regen-64.png"
+                            alt="Cloudy icon"
+                            class="weather-icon"
+                          />
+
+                          <span class="temperature" id="temperature">1</span>
+                          <span class="units">°C | <a href="#">°F</a></span>
+                        </div>
+                      </div>
+                      <!--Location Temp Bottom info-->
+                      <div class="temp-container">
+                        <div class="row">
+                          <div class="col-9">
+                            <ul>
+                              <li>Humidity: <span id="humidity"></span>%</li>
+                              <li>Wind: <span id="wind"></span> km/h</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="fixed-bottom">
-        <a href="https://github.com/AlexandraJaap?tab=repositories">Open-source code</a> by Alexandra Jaap</div>
+    <div class="git-Source">
+      <a href="https://github.com/AlexandraJaap?tab=repositories"
+        >Open-source code</a
+      >
+      by Alexandra Jaap
+    </div>
+
     <script src="src/script.js"></script>
   </body>
 </html>
